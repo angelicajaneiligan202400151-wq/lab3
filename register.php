@@ -71,15 +71,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="success"><?php echo $success; ?></div>
     <?php endif; ?>
 
-    <form method="POST">
-        <input type="text" name="username" placeholder="Username">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="password" name="confirm" placeholder="Confirm Password">
-        <button type="submit">Register</button>
-    </form>
+   <form method="POST">
+    <input type="text" name="username" placeholder="Username">
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
+    <input type="password" name="confirm" placeholder="Confirm Password">
 
-</div>
+    <button type="submit">Register</button>
+
+    <div class="link">
+        Already have an account?
+        <a href="login.php">Login here</a>
+    </div>
+</form>
 
 </body>
 </html>
